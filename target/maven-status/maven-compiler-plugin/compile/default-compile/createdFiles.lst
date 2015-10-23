@@ -1,0 +1,6 @@
+com\happylife\demo\SimpleHttpServer$RootHandler.class
+com\happylife\demo\SimpleHttpServer.class
+com\happylife\demo\SimpleHttpServer$EchoGetHandler.class
+com\happylife\demo\SimpleHttpServer$EchoHeaderHandler.class
+com\happylife\demo\Main.class
+com\happylife\demo\SimpleHttpServer$EchoPostHandler.class
