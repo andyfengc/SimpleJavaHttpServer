@@ -24,7 +24,7 @@ import com.sun.net.httpserver.HttpsServer;
 public class SimpleHttpsServer {
 	private int port;
 	private HttpsServer server;
-	private static String protocol = "TLS";
+	private static String Protocol = "TLS";
 
 	public void Start(int port) {
 		try {
@@ -52,7 +52,7 @@ public class SimpleHttpsServer {
 			// create https server
 			server = HttpsServer.create(new InetSocketAddress(port), 0);
 			// create ssl context
-			SSLContext sslContext = SSLContext.getInstance(protocol);
+			SSLContext sslContext = SSLContext.getInstance(Protocol);
 			// setup the HTTPS context and parameters
 			sslContext.init(kmf.getKeyManagers(), tmf.getTrustManagers(), null);
 			server.setHttpsConfigurator(new HttpsConfigurator(sslContext) {
